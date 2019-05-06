@@ -64,7 +64,7 @@ router.post('/editPost', (req,res)=>{
             $set: {
                 'tweetMessage.$': req.body.tweetMessage,
                 'tweetImage.$': req.body.tweetImage,
-                'tweetPublic.$': req.body.postPublic,
+                'tweetPublic.$': req.body.tweetPublic,
             }
         },
         (errors, results)=>{
