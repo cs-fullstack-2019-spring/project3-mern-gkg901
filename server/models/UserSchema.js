@@ -6,7 +6,9 @@ var UserSchema = new Schema({
     password:String,
     profileImage:String,
     backgroundImage:String,
-    tweets:[{tweetMessage:String, tweetImage:String, tweetPublic:Boolean}]
+    tweet:[{tweetMessage:String,
+        tweetImage:String,
+        tweetPublic:Boolean}]
 });
 
 module.exports = mongoose.model("User", UserSchema);
